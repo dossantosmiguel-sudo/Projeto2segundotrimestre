@@ -1,12 +1,12 @@
-.principal1 {
+.principal1 {   /* cor do título*/
 color:  #007e4e;
 }
-.paragrafo {
+.paragrafo {    /*cor dos paragrafos*/
     color: white;
 }
-.titulo {
+.titulo {     /*cor dos titulos*/
     color:  #61d77a;
 }
-img{
+img{   /*margem da imagem*/
     margin: 15px;
 }

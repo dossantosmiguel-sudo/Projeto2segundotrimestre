@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8"> <!-- Configuração da página -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Adapta a tela -->
+        <title>Blog</title>   <!-- Nome da aba -->
+        <link rel="stylesheet" href="style.css"> <!-- CSS externo -->
         <style>
-            header{
-                background-color: #BFFFCD;
+            header{ /* Cabeçalho */
+                background-color: #BFFFCD; 
                 color: #007e4e;
                 text-align: center;
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
             }
-            main{
+            main{  /* Conteúdo principal */
                 background-color: #007e4e;
                 color: #BFFFCD;
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
             }
-            article{
+            article{ /* Artigos */
                 display: flex;
             }
-            img{width: 125px;
+            img{    /* Imagens */
+                width: 125px;
             height: 150px;
             }
-       .artigo-autor{
+       .artigo-autor{  /* Autor */
                 font-weight: bold;
             }
         </style>
     </head>
     <body>
-    <header>
+    <header>  <!-- Cabeçalho -->
         <h1 class="principal1">Minha carreira no Futebol</h1>
         <p>Estarei compartilhando um pouco da minha trajetória como jogador</p> 
     </header>
     <main>
-        <article>
+        <article>   <!-- Primeiro artigo -->
             <img src="imagem-carreira.jpeg" alt="imagem com medalha após a conquista do título.">
             <div>
                         <h2 class="titulo">Minha primeira medalha</h2>
                     <p class="artigo-autor">Por: Miguel da Silva Santos</p>
                     <p class="paragrafo">Minha carreira começou aos 5 anos de idade, quando despertou em mim a vontade de começar a treinar. Com isso falei com meu pais para me colocarem em uma escolhinha, foi aí que minha mãe me levou para fazer uma aula experimental no Estrela Futsal, desde então me apaixonei pelo futebol e não vivo sem. Logo após alguns meses de treinamento participei do meu primeiro campeonato, que aconteceu la em Paranavaí. Foram 8 jogos de intensidade e apredizagem,onde eu saí muito feliz por termos conseguido ser campeões e ser a minha primeira medalha.</p>
-                    <button>​⚽<span>0</span></button>
+                    <button>​⚽<span>0</span></button>  <!-- Botão de curtida -->
                     </div>
         </article>
-        <article>
+        <article> <!-- Segundo artigo -->
             <img src="imagem-paranaense.jpeg" alt="imagem após conquistar o vice-campeão do paranaense">
                     <div>
                         <h2 class="titulo">Vice campeão do paranaense</h2>
@@ -55,8 +56,8 @@
                     <p class="paragrafo">Após minha primeira medalha continuei treinando muito e participando de varios campeonatos, incluindo os paranaenses. Disputei três anos consecutivos do paranense, mais na segunda vez foi quando conseguimos chegar mais longe, na tão sonhada final, nosso adversário não era qualquer um, sabiámos que iria ser um jogo muito dificil, dito e feito, que jogão que foi, infelizmente perdemos de 3x2 levando o 3 gol no finalzinho do jogo, ficando como vice-campeão. Mesmo assim ficamos muito orgulhosos do resultado, momento que irá ficar na memória para sempre. Mais a história dos paraneses não acabou, fui eleito atleta destaque nas três edições que participei, além do destaque no ultimo ano também fui premiado como o melhor ala da temporada.</p>
                 </div>
                     
-        </article>
-        <article>
+                <article>
+        </article>  <!-- Terceiro artigo -->
             <img src="imagem-maringa.jpeg" alt="imagem do Miguel no inicio do jogo, cantando o hino nacional.">
                     <div>
                         <h2 class="titulo">Base do Maringa FC</h2>
@@ -65,7 +66,7 @@
                 </div>
                     
         </article>
-        <article>
+        <article>  <!-- Quarto artigo -->
             <img src="imagem-cirurgia.jpeg" alt="imagem do Miguel sentado sobre a maca do hospital, após realizar a cirurgia do joelho.">
                     <div>
                         <h2 class="titulo">Cirurgia do joelho</h2>
@@ -74,21 +75,21 @@
                 </div>
                 
         </article>
-<video width="85%" max-width="640" controls>
+<video width="85%" max-width="640" controls>  <!-- Vídeo -->
   <source src="vídeo-gol.mp4" type="video/mp4">
   </video>
-  <p>Um dos meus gols durante a trajetória no futsal.</p>
+  <p>Um dos meus gols durante a trajetória no futsal.</p>  <!-- Legenda -->
 
     </main>
 </body>
 <script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
+    const botao = document.querySelector("button"); // Seleciona o botão
+    botao.addEventListener("click", botaoClicado); // Detecta o clique
 
-    function botaoClicado(){
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        texto.textContent++;
+    function botaoClicado(){  // Conta os cliques
+        console.log("fui clicado"); // Mostra no console
+        let texto = botao.querySelector("span"); // Pega o número
+        texto.textContent++; // Aumenta o número
     }
 </script>
 </html>
